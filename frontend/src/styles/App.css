@@ -1,0 +1,125 @@
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --col-deepblue: #4478e3;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #c5cfe2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #cfdef3,
+    #c5cfe2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+}
+
+svg {
+  width: 100%;
+  /* removes bottom line */
+  overflow: visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count: infinite;
+  fill: #4478e3;
+}
+.drop {
+  fill: var(--col-deepblue);
+  animation: drop 3.2s linear infinite normal;
+  stroke: var(--col-deepblue);
+  stroke-width: 0.5;
+  transform: translateY(25px);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.drop2 {
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration: 3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration: 3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration: 3.2s;
+}
+.gooeff {
+  filter: url(#goo);
+}
+#wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity: 0.3;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(0.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(0.1);
+  }
+}
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
+  }
+}

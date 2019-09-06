@@ -1,0 +1,25 @@
+{
+  "name": "damfund",
+  "version": "1.0.0",
+  "description": "scraping supreme court dam fund",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "dam"
+  ],
+  "author": "ameerhamza",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "umpteen": "^0.1.1",
+    "written-number": "^0.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
