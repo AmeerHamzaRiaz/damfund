@@ -2,6 +2,10 @@
 
 An attempt to revamp the "The Supreme Court of Pakistan and the Prime Minister of Pakistan Diamer-Bhasha and Mohmand Dams Fund" website http://www.supremecourt.gov.pk/web/page.asp?id=2757
 
+## Deployement
+
+Node.js REST API is deployed at heroku https://pakdamfund.herokuapp.com/damfund
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

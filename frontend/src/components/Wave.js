@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/App.css';
 
 const Wave = (props) => {
@@ -42,7 +42,7 @@ const Wave = (props) => {
                     <use id="wave1" className="wave" href="#wave" x="0" y="1" />
                     </g>  
                 </svg>
-                <div>{props.val} % have been collected so far</div>
+                <div style={{paddingBottom: 20}}>{props.val} % have been collected so far!!</div>
             </footer>
         );
     }

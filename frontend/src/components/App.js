@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8081/damfund')
+    axios.get('https://pakdamfund.herokuapp.com/damfund')
     .then((resp) => {
       const totalAmount = Number(resp.data.totalAmount);
       this.setState({ totalAmountEng: resp.data.totalAmountEng, totalAmount, data: resp.data.data });
@@ -40,10 +40,9 @@ class App extends Component {
           useEasing={true}
         />
          
-        <p>{this.state.totalAmountEng}</p>
+        <p style={{paddingBottom: 20}}>{this.state.totalAmountEng}</p>
         {/* <div><p>{(((this.state.totalAmount*0.0064)/12000000000)*100).toFixed(5)} % have been collected so far</p></div> */}
         <Wave val={(((this.state.totalAmount*0.0064)/12000000000)*100).toFixed(5)}/>
-        <p>Made with ❤ in Switzerland</p>
       </div>
     );
   }
