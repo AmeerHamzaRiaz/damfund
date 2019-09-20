@@ -5,6 +5,7 @@ An attempt to revamp the "The Supreme Court of Pakistan and the Prime Minister o
 ## Deployement
 
 Node.js REST API is deployed at heroku https://pakdamfund.herokuapp.com/damfund
+React App is deployed at surge.sh http://damfund.surge.sh/
 
 ## Getting Started
 
