@@ -15,7 +15,7 @@
     "axios": "^0.18.1",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "umpteen": "^0.1.1",
     "written-number": "^0.9.1"
   },
